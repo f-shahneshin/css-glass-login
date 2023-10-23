@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle{
+    width: 1000px;
+    height: 1000px;
+    background: rgb(14,36,130);
+    background: linear-gradient(90deg, rgba(14,36,130,1) 0%, rgba(227,230,20,1) 100%, rgba(1,6,27,1) 100%, rgba(149,166,247,1) 100%);    border-radius:100%;
+    position: fixed;
+    top: 10%;
+    left: -16rem;
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(22px);
+    width: 80%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    
+}
+
+.form p {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+   
+}
+
+label {
+    font-size: 15px;
+    color: #fff;
+}
+
+input {
+   margin-top: 10px;
+   border-radius: 30px;
+   padding: 5px 10px;   
+   border: 2px solid #fff;
+   background-color: inherit;
+   height: 45px;
+}
+
+ input:hover{
+    border: 2px solid #ffffff69 ;
+}
+
+input:focus , input:active {
+    outline: none ;
+    
+}
+
+.form .form__info {
+    display: flex;
+    flex-direction: column;
+  margin: 10px 0;
+  width: 70%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.image img{
+    object-fit: contain;
+   
+}
+
+.form__button  {
+    display: inline-block;
+    display: flex;
+    width: 100%;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.form__button button {
+    width: 70%;
+    border-radius: 20px;
+    padding: 5px 0; 
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    height: 45px;
+    margin-top: 25PX;
+    cursor: pointer;
+}
+
+.form__button  a {
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:767px) {
+    .image{
+        display: none;
+    
+    }
+
+    .form{
+        width: 80%;
+    }
+
+    .form__info{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    p {
+ display: none;
+    }
+    
+}
